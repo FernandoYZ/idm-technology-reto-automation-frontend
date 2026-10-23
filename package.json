@@ -1,0 +1,21 @@
+{
+  "name": "web-playwright",
+  "version": "1.0.0",
+  "description": "Reto QA Frontend - Sauce Demo con Playwright + Cucumber",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:happy": "cucumber-js --tags @happy",
+    "test:unhappy": "cucumber-js --tags @unhappy",
+    "test:headed": "cross-env HEADLESS=false cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "cross-env": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.3"
+  }
+}
